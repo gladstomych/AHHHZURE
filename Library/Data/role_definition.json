@@ -1,0 +1,20 @@
+{
+    "Name": "VM Monitoring Operator",
+    "Id": null,
+    "IsCustom": true,
+    "Description": "Allows the user to start, stop, and restart VMs, run and edit custom extension, and view VM IP.",
+    "Actions": [
+        "Microsoft.Compute/virtualMachines/start/action",
+        "Microsoft.Compute/virtualMachines/restart/action",
+        "Microsoft.Compute/virtualMachines/deallocate/action",
+        "Microsoft.Compute/virtualMachines/read",
+        "Microsoft.Resources/subscriptions/resourceGroups/read",
+        "Microsoft.Network/publicIPAddresses/read",
+        "Microsoft.Compute/virtualMachines/extensions/*",
+		"Microsoft.Network/networkInterfaces/read",
+        "Microsoft.Resources/deployments/*"
+    ],
+    "NotActions": [],
+    "AssignableScopes": [
+    ]
+}
